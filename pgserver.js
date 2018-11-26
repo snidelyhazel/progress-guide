@@ -4,12 +4,14 @@ var fs = require('fs');
 
 app.get('/', function (req, res)
 {
-  fs.readFile('progressguide.html', 'utf8', function(err, data)
+  fs.readFile('public/progressguide.html', 'utf8', function(err, data)
   {
       if (err) throw err;
       res.send(data);
-      console.log(data);
   });
 });
+
+// Access all .js files
+app.use(express.static('public'));
 
 app.listen(process.env.PORT || 3000);
