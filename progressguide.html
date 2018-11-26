@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+  table, ul {
+    white-space: normal;
+  }
+  .has-error {
+    background: pink;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>Progress Guide</h1>
+
+  <p>Hi!</p>
+
+  <p>Are you interested in channeling your passions proactively to advocate for progressive causes? This site will direct you to resources to help you turn your activism into action.</p>
+
+  <p>Please complete <a href="#survey">this short survey</a> to help determine how to maximize your impact.</p>
+
+  <p>Please see <a href="#tips-for-activists">tips for activists</a>.</p>
+
+  <h2 id="survey">Survey</h2>
+  <form>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <label for="zipcode">What is your location? Enter a zip code: </label>
+          </td>
+          <td>
+            <input name="zipcode" id="zipcode" type="text" pattern="(\d{5})|(\d{5}-\d{4})" title="A zip code must take the form of XXXXX or XXXXX-XXXX" placeholder="XXXXX">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="age">What is your age?</label>
+          </td>
+          <td>
+            <input name="age" id="age" type="number" min="8" max="130"> years
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">What is your gender?</label>
+          </td>
+          <td>
+            <select name="gender" id="gender">
+              <option hidden disabled selected>Select an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="nonbinary">Nonbinary</option>
+              <option value="prefer-not-to-state">Prefer not to state</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lgbtq">Do you identify as LGBTQ?</label>
+          </td>
+          <td>
+            <select name="lgbtq" id="lgbtq">
+              <option hidden disabled selected>Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="prefer-not-to-state">Prefer not to state</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="party">Are you affiliated with a political party?</label>
+            <br>
+            <b>(link to register voting online)</b>
+          </td>
+          <td>
+            <select name="party" id="party">
+              <option value="democratic">Democratic Party</option>
+              <option value="republican">Republican Party</option>
+              <option value="green">Green Party</option>
+              <option value="libertarian">Libertarian Party</option>
+              <option value="no-preference">No party preference</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="is-in-group">Are you affiliated with any progressive groups?</label>
+          </td>
+          <td>
+            <select name="is-in-group" id="is-in-group">
+              <option hidden disabled selected>Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr id="progressive-group-row" style="display: none;">
+          <td>
+            Please select the groups you are affiliated with:
+          </td>
+          <td>
+            <label><input type="checkbox" name="groups" value="Swing Left">Swing Left</label><br>
+            <label><input type="checkbox" name="groups" value="Indivisible">Indivisible</label><br>
+            <label><input type="checkbox" name="groups" value="Organizing for Action">Organizing for Action</label><br>
+            <label><input type="checkbox" name="groups" value="Move On">Move On</label><br>
+            <label><input type="checkbox" name="groups" value="United We Dream">United We Dream</label><br>
+            <label><input type="checkbox" name="groups" value="Flippable">Flippable</label><br>
+            <label><input type="checkbox" name="groups" value="Sister District">Sister District</label><br>
+            <label><input type="checkbox" name="groups" value="Resist Bot">Resist Bot</label><br>
+            <label><input type="checkbox" name="groups" value="Stand Up America">Stand Up America</label><br>
+            <label><input type="checkbox" name="groups" value="March On">March On</label><br>
+            <label><input type="checkbox" name="groups" value="Democratic Socialists of America">Democratic Socialists of America</label><br>
+            <label><input type="checkbox" name="groups" value="Democrats.com">Democrats.com</label><br>
+            <label><input type="checkbox" name="groups" value="Mobilize America">Mobilize America</label><br>
+            <label><input type="checkbox" name="groups" value="Progressive Turnout Project">Progressive Turnout Project</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="is-in-union">Are you a member of a union or guild?</label>
+          </td>
+          <td>
+            <select name="is-in-union" id="is-in-union">
+              <option hidden disabled selected>Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr id="union-row" style="display: none;">
+          <td>
+            Please select the unions or guilds you are affiliated with:
+          </td>
+          <td>
+            <label><input type="checkbox" name="unions" value="AFL-CIO">AFL-CIO</label><br>
+            <label><input type="checkbox" name="unions" value="American Federation of Teachers">American Federation of Teachers</label><br>
+            <label><input type="checkbox" name="unions" value="Labor Net">Labor Net</label><br>
+            <label><input type="checkbox" name="unions" value="California Labor Federation">California Labor Federation</label><br>
+            <label><input type="checkbox" name="unions" value="California Federation of Teachers">California Federation of Teachers</label><br>
+            <label><input type="checkbox" name="unions" value="SAG-AFTRA">SAG-AFTRA</label><br>
+            <label><input type="checkbox" name="unions" value="ITSE">ITSE</label><br>
+            <label><input type="checkbox" name="unions" value="IBEW">IBEW</label><br>
+            <label><input type="checkbox" name="unions" value="ASCAP">ASCAP</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="contribution">How are you able to contribute?</label>
+          </td>
+          <td>
+            Time <input name="contribution" id="contribution" type="range" min="0" max="100"> Money
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Do you have an organizational preference?
+          </td>
+          <td>
+            <label><input type="checkbox" name="organizational-preference" value="political">political: <br>organizations affiliated with a political party</label><br>
+            <label><input type="checkbox" name="organizational-preference" value="nongovernmental">nongovernmental: <br>nonprofits and independent organizations</label><br>
+            <label><input type="checkbox" name="organizational-preference" value="governmental">governmental: <br>supporting your government representatives, campaigns for candidates</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            At what level do you prefer to focus your efforts?
+          </td>
+          <td>
+            ...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+    What issues that are important to you?
+    <!-- select an option to see suboptions -->
+    labor, wages
+    economic, regulation, taxation, stopping corporate concentration, fair trade deals
+    women's rights, reproductive autonomy, equal pay
+    voting rights, gerrymandering, campaign finance reform
+    rights for people with disabilities
+    lgbtq rights
+    poc rights, ending systeming racism, closing racial wealth gap
+    immigration, refugee rights, asylum seekers
+    education, debt free college, student debt relief, universal preschool
+    environment, clean energy, public lands, access to drinking water, sustainability
+    health care, universal health care, mental health, combatting addiction, reproductive rights, gun violence prevention, prescription drug cost reduction, ending domestic violence
+    veterans' benefits
+    terrorism, domestic terrorism, cybersecurity, nuclear nonproliferation
+    homelessness, homeownership, affordable housing
+    social safety net, social security
+    civil rights, criminal justice reform, indigenous sovereignty
+
+
+
+  </form>
+
+  <h2 id="tips-for-activists">Tips for Activists</h2>
+
+  <ul>
+    <li>Set doable goals. For instance, aim to volunteer one day a month or to recruit one friend to volunteer with you. Once you achieve that goal, set a stretch goal, such as volunteering an extra day that month or enlisting more friends to get involved.
+
+    <li>Find an accountability buddy. Volunteering with friends is fun, especially helpful when trying times get you down. You can help keep each other motivated and remind each other of your commitment to enacting positive change.
+
+    <li>Pace yourself. It's easy to get super enthusiastic such that you expend a lot of energy at the outset, overcommitting to the point of burnout. It's OK to take a break. Prioritize self-care, whatever that looks like for you.
+
+    <li>Be resilient in the face of failure. Try not to take setbacks personally. Enacting change is a process. Inevitably you will take steps back but you will continue to forge forward.
+
+    <li>Celebrate your victories however insignificant they may seem in the grand scheme. Manage your expectations. Working within entrenched systems is difficult yet important. The mere act of doing something is worth celebrating. Reward yourself accordingly.
+
+    <li>Don't waste your time arguing with people on social media. Unless you really care about them. Even then, realize you might not get through to them. Project compassion. Spread facts.
+  </ul>
+
+  <!-- accessibility, mobile? -->
+  <script src="jquery.js"></script>
+  <script src="pgscript.js"></script>
+</body>
+</html>
