@@ -1,0 +1,28 @@
+{
+  "name": "pg-node",
+  "version": "0.0.0",
+  "description": "Node.js for Progress Guide",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "pgserver.js",
+  "scripts": {
+    "start": "node pgserver.js",
+    "test": "node pgserver.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snidelyhazel/progress-guide"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
