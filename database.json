@@ -1,0 +1,48 @@
+[
+  {
+    "name": "NARAL Pro-Choice America",
+    "website": "http://prochoiceamerica.org",
+    "join": "http://actnow.prochoiceamerica.org/signup/email_signup/",
+    "volunteer": "http://actnow.prochoiceamerica.org/signup/volunteer/",
+    "donate": "https://secure.actblue.com/contribute/page/homepage_maindonate/",
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": "federal",
+    "age": "all-ages",
+    "cause": "reproductive-rights"
+  },
+  {
+    "name": "NARAL Pro-Choice California",
+    "website": "http://prochoicecalifornia.org",
+    "join": "http://actnow.prochoiceamerica.org/signup/ca-email_signup/",
+    "volunteer": "https://prochoicecalifornia.org/volunteer/",
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": "local",
+    "age": "all-ages",
+    "cause": "reproductive-rights"
+  },
+  {
+    "name": "Katie Hill for Congress",
+    "website": "http://katiehillforcongress.com",
+    "time": "true",
+    "money": "true",
+    "type": "governmental",
+    "level": "both",
+    "age": "all-ages",
+    "cause": "candidate-campaign"
+  },
+  {
+    "name": "Moms Demand Action",
+    "website": "http://momsdemandaction.org",
+    "join": "https://act.everytown.org/signup/Join-Moms/",
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": "both",
+    "age": "all-ages",
+    "cause": "gun-violence"
+  }
+]
