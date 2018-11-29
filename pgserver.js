@@ -6,8 +6,13 @@ var bodyParser = require('body-parser');
 // URL-encoded bodies
 app.use(bodyParser.urlencoded({extended: true}));
 
-
-
+// DDOS protection from https://www.npmjs.com/package/ddos
+var Ddos = require('ddos');
+if (app.get('env') !== 'development')
+{
+  var ddos = new Ddos({burst:10, limit:15});
+  app.use(ddos.express);
+}
 
 app.get('/', function (req, res)
 {
