@@ -6,6 +6,12 @@ var bodyParser = require('body-parser');
 // URL-encoded bodies
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Load database file as string
+var databaseFile = fs.readFileSync("database.json");
+// Parse database file
+var databaseJSON = JSON.parse(databaseFile);
+console.log(databaseJSON);
+
 // DDOS protection from https://www.npmjs.com/package/ddos
 var Ddos = require('ddos');
 if (app.get('env') !== 'development')
@@ -26,7 +32,11 @@ app.get('/', function (req, res)
 app.post('/make-progress', function (req, res)
 {
   console.log(req.body);
-  res.send('I hear you.');
+  fs.readFile('public/progressaction.html', 'utf8', function(err, data)
+  {
+      if (err) throw err;
+      res.send(data);
+  });
 });
 
 // Access all .js files
