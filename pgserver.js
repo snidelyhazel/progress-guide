@@ -2,6 +2,13 @@ var express = require('express')
 var app = express();
 var fs = require('fs');
 
+var bodyParser = require('body-parser');
+// URL-encoded bodies
+app.use(bodyParser.urlencoded({extended: true}));
+
+
+
+
 app.get('/', function (req, res)
 {
   fs.readFile('public/progressguide.html', 'utf8', function(err, data)
@@ -9,6 +16,12 @@ app.get('/', function (req, res)
       if (err) throw err;
       res.send(data);
   });
+});
+
+app.post('/make-progress', function (req, res)
+{
+  console.log(req.body);
+  res.send('I hear you.');
 });
 
 // Access all .js files
