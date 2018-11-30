@@ -22,10 +22,7 @@ document.getElementById("is-in-union").addEventListener("change", function() {
 // Show popup window with House of Representatives search results
 function repSearch()
 {
-  var left = screen.width - 775;
-  var top = 0;
-  var w = window.open("", "popupWindow", "width=775, height=" + screen.height + ", scrollbars=yes, left=" + left + ", top=" + top + "");
-  w.location.href = "https://ziplook.house.gov/htbin/findrep_house?ZIP=" + ($("#zipcode").val());
+  popupWindow("https://ziplook.house.gov/htbin/findrep_house?ZIP=" + ($("#zipcode").val()));
 }
 
 $(document).ready(function()

@@ -22,8 +22,17 @@ Action items!
     <div>
       <strong>{{name}}</strong>
       <em>{{website}}</em>
+      <a href="{{join}}" onclick="openJoin(this, event)" target="_blank">Join</a>
     </div>
   {{/each}}
 }
+  <script src="pgcommon.js"></script>
+  <script>
+    function openJoin(anchor, event)
+    {
+      popupWindow(anchor.href);
+      event.preventDefault();
+    }
+  </script>
 </body>
 </html>
