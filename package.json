@@ -2,25 +2,31 @@
   "name": "pg-node",
   "version": "0.0.0",
   "description": "Node.js for Progress Guide",
-  "engines": {
+  "engines":
+  {
     "node": "10.x"
   },
   "main": "pgserver.js",
-  "scripts": {
+  "scripts":
+  {
     "start": "node pgserver.js",
     "test": "node pgserver.js"
   },
-  "dependencies": {
+  "dependencies":
+  {
     "ddos": "^0.1.31",
     "ejs": "^2.5.6",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nedb": "^1.8.0"
   },
   "devDependencies": {},
-  "repository": {
+  "repository":
+  {
     "type": "git",
     "url": "https://github.com/snidelyhazel/progress-guide"
   },
-  "keywords": [
+  "keywords":
+  [
     "node",
     "heroku",
     "express"

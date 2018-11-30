@@ -1,6 +1,8 @@
 var express = require('express')
 var app = express();
 var fs = require('fs');
+var nedb = require('nedb'); // https://github.com/louischatriot/nedb
+var db = new nedb();
 
 var bodyParser = require('body-parser');
 // URL-encoded bodies
@@ -10,7 +12,27 @@ app.use(bodyParser.urlencoded({extended: true}));
 var databaseFile = fs.readFileSync("database.json");
 // Parse database file
 var databaseJSON = JSON.parse(databaseFile);
-console.log(databaseJSON);
+
+db.insert(databaseJSON, function (err, dbEntries)
+{
+  // The dbEntries parameter is an array containing these entries, augmented with their _id.
+});
+
+function arrayify(postdata)
+{
+  if (Array.isArray(postdata))
+  {
+    return postdata;
+  }
+  else if (postdata === undefined)
+  {
+    return [];
+  }
+  else
+  {
+    return [postdata];
+  }
+}
 
 // DDOS protection from https://www.npmjs.com/package/ddos
 var Ddos = require('ddos');
@@ -31,11 +53,18 @@ app.get('/', function (req, res)
 
 app.post('/make-progress', function (req, res)
 {
-  console.log(req.body);
+  //console.log(arrayify(req.body));
+
   fs.readFile('public/progressaction.html', 'utf8', function(err, data)
   {
-      if (err) throw err;
-      res.send(data);
+    if (err) throw err;
+
+    db.find({level: {$in: arrayify(req.body.level)}}, function (err, entries)
+    {
+      // The entries parameter is an array containing matching entries.
+      // If no entry is found, entries is equal to [].
+      res.send(data + "\n\n" + JSON.stringify(entries));
+    });
   });
 });
 
