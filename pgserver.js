@@ -3,6 +3,7 @@ var app = express();
 var fs = require('fs');
 var nedb = require('nedb'); // https://github.com/louischatriot/nedb
 var db = new nedb();
+var handlebars = require('handlebars'); // https://handlebarsjs.com/
 
 var bodyParser = require('body-parser');
 // URL-encoded bodies
@@ -55,7 +56,7 @@ app.post('/make-progress', function (req, res)
 {
   //console.log(arrayify(req.body));
 
-  fs.readFile('public/progressaction.html', 'utf8', function(err, data)
+  fs.readFile('public/progressaction.html', 'utf8', function(err, source)
   {
     if (err) throw err;
 
@@ -63,7 +64,10 @@ app.post('/make-progress', function (req, res)
     {
       // The entries parameter is an array containing matching entries.
       // If no entry is found, entries is equal to [].
-      res.send(data + "\n\n" + JSON.stringify(entries));
+      var template = handlebars.compile(source);
+      var html = template({entries: entries});
+
+      res.send(html);
     });
   });
 });

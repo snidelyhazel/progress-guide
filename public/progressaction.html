@@ -16,5 +16,14 @@
 </head>
 <body>
 Action items!
+
+{
+  {{#each entries}}
+    <div>
+      <strong>{{name}}</strong>
+      <em>{{website}}</em>
+    </div>
+  {{/each}}
+}
 </body>
 </html>
