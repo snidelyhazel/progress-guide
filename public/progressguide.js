@@ -39,6 +39,37 @@ $(document).ready(function()
        repSearch();
      }
    });
+
+  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4')];
+  let currentSection = 0;
+
+  surveySections[currentSection].removeAttr('hidden');
+
+  $('#continueButton').on("click", function(event)
+  {
+    // Find inputs and selectors.
+    const inputsOnThisSection = surveySections[currentSection].find("input, select");
+    let anyInvalidInputs = false;
+    for (const input of inputsOnThisSection)
+    {
+      // Use built-in validation. https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/checkValidity
+      if (!input.checkValidity())
+      {
+        anyInvalidInputs = true;
+        // Use built-in notification. https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reportValidity
+        input.reportValidity();
+      }
+    }
+
+    if (!anyInvalidInputs)
+    {
+      surveySections[currentSection].attr('hidden', '');
+      currentSection++;
+      surveySections[currentSection].removeAttr('hidden');
+    }
+  });
 });
 
-//https://www.commoncause.org/find-your-representative/?gclid=CjwKCAiA0O7fBRASEiwAYI9QAgkcoiwXKLe2OqzRpjcz5gQHiLSs-IhuoOKEc73QhhysmvzqGQuk2xoCAkYQAvD_BwE
+//https://developers.google.com/civic-information/
+//https://www.opensecrets.org/elections/
+//https://openstates.org/find_your_legislator/
