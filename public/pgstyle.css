@@ -1,0 +1,19 @@
+html
+{
+  background: #692E9B;
+}
+
+body {
+  background: white;
+  max-width: 50em;
+  padding: 2em;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+table, ul {
+  white-space: normal;
+}
+.has-error {
+  background: pink;
+}

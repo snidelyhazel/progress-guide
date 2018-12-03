@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  body {
-    font-family: sans-serif;
-    line-height: 1.4;
-  }
-  table, ul {
-    white-space: normal;
-  }
-  .has-error {
-    background: pink;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="/pgstyle.css"/>
 </head>
 <body>
 Action items!
@@ -27,12 +16,6 @@ Action items!
   {{/each}}
 }
   <script src="pgcommon.js"></script>
-  <script>
-    function openJoin(anchor, event)
-    {
-      popupWindow(anchor.href);
-      event.preventDefault();
-    }
-  </script>
+  <script src="progressaction.js"></script>
 </body>
 </html>
