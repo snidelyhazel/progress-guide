@@ -42,10 +42,11 @@ table, ul
 
 .nav
 {
-  height: 100px;
-  background-image: url("ribbon.png");
-  background-size: 100% 100%;
-
+  border-image-source: url(ribbon.png);
+  border-image-slice: 55 fill;
+  border-image-width: 25px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
   /*
   background: rgb(255, 0, 0, .5);
   position: absolute;
