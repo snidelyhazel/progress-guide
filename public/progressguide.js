@@ -9,14 +9,6 @@ for(var i=0;i<inputs.length;i++) {
   });
 }
 
-document.getElementById("is-in-group").addEventListener("change", function() {
-  document.getElementById("progressive-group-row").style.display = (this.value == "yes") ? "" : "none";
-})
-
-document.getElementById("is-in-union").addEventListener("change", function() {
-  document.getElementById("union-row").style.display = (this.value == "yes") ? "" : "none";
-})
-
 // Find representatives by zipcode
 
 // Show popup window with House of Representatives search results
@@ -40,7 +32,7 @@ $(document).ready(function()
      }
    });
 
-  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4'), $('#section5'),$('#section6'),];
+  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4'), $('#section5'), $('#section6'),];
   let currentSection = 0;
 
   surveySections[currentSection].removeAttr('hidden');
@@ -66,6 +58,7 @@ $(document).ready(function()
       surveySections[currentSection].attr('hidden', '');
       currentSection++;
       surveySections[currentSection].removeAttr('hidden');
+      $('#intro').attr('hidden', '');
     }
   });
 });
