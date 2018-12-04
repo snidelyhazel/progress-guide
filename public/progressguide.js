@@ -40,7 +40,7 @@ $(document).ready(function()
      }
    });
 
-  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4')];
+  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4'), $('#section5'),$('#section6'),];
   let currentSection = 0;
 
   surveySections[currentSection].removeAttr('hidden');
