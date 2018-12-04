@@ -4,26 +4,36 @@
   <link rel="stylesheet" type="text/css" href="/pgstyle.css"/>
 </head>
 <body>
+<!--“My doctor says that I have a malformed public-duty gland and a natural deficiency in moral fibre,” Ford muttered to himself, “and that I am therefore excused from saving Universes.”-->
+<!--It is a well known fact that those people who most want to rule people are, ipso facto, those least suited to do it. To summarize the summary: anyone who is capable of getting themselves made President should on no account be allowed to do the job.-->
 
-  <h1 class="nav">The Progressive's Guide to Saving Democracy</h1>
 
-  <div class="capsule">
-    <p>Are you interested in channeling your passions proactively to advocate for progressive causes? This site will direct you to resources to help you turn your activism into action.</p>
-    <p><a href="#survey">This survey</a> will help you where you can make your greatest impact.</p>
+  <div class="nav">
+    <h1>The&nbsp;Progressive's&nbsp;Guide to Saving&nbsp;Democracy</h1>
   </div>
 
+  <div class="capsule" id="intro">
+    <p>Are you interested in channeling your passions proactively to advocate for progressive causes? This site will direct you to resources to help you turn your activism into action.</p>
+    <p>Discover where you can make your greatest impact by taking the survey now.</p>
+
+  </div>
   <!--<p>Please see <a href="/progresstips.html">tips for activists</a>.</p>-->
 
   <div class="capsule">
-    <h2 id="survey">Survey</h2>
+    <h2 id="survey">Take the Survey</h2>
     <form action="/make-progress" method="post">
 
       <div id="section1" hidden>
         <table>
           <tbody>
             <tr>
+              <td colspan="2">
+                <label for="zipcode">Where in the galaxy are you?</label>
+              </td>
+            </tr>
+            <tr>
               <td>
-                <label for="zipcode">What is your location? Enter a zip code: </label>
+                 Enter your zip code:
               </td>
               <td>
                 <input name="zipcode" id="zipcode" type="text" required pattern="(\d{5})|(\d{5}-\d{4})" title="A zip code must take the form of XXXXX or XXXXX-XXXX" placeholder="XXXXX">
