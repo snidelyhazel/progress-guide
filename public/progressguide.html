@@ -35,77 +35,49 @@
       </div>
 
       <div id="section2" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <label for="age">What is your age?</label>
-              </td>
-              <td>
-                <input name="age" id="age" required type="number" min="13" max="130"> years
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inputrow">
+          <label for="age">What is your age?</label>
+          <input name="age" id="age" required type="number" min="13" max="130"> years
+        </div>
       </div>
 
       <div id="section3" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <label for="gender">What is your gender?</label>
-              </td>
-              <td>
-                <select name="gender" id="gender" required>
-                  <option value="" hidden disabled selected>Select an option</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="nonbinary">Nonbinary</option>
-                  <option value="prefer-not-to-state">Prefer not to state</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="lgbtq">Do you identify as LGBTQ?</label>
-              </td>
-              <td>
-                <select name="lgbtq" id="lgbtq">
-                  <option value="" hidden disabled selected>Select an option</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                  <option value="prefer-not-to-state">Prefer not to state</option>
-                </select>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inputrow">
+          <label for="gender">What is your gender?</label>
+          <select name="gender" id="gender" required>
+            <option value="" hidden disabled selected>Select an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonbinary">Nonbinary</option>
+            <option value="prefer-not-to-state">Prefer not to state</option>
+          </select>
+
+          <label for="lgbtq">Do you identify as LGBTQ?</label>
+          <select name="lgbtq" id="lgbtq">
+            <option value="" hidden disabled selected>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="prefer-not-to-state">Prefer not to state</option>
+          </select>
+        </div>
       </div>
 
       <div id="section4" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <label for="party">Are you affiliated with a political party?</label>
-                <br>
-                <b>(link to register voting online)</b>
-              </td>
-              <td>
-                <select name="party" id="party">
-                  <option hidden disabled selected>Select an option</option>
-                  <option value="democratic">Democratic Party</option>
-                  <option value="republican">Republican Party</option>
-                  <option value="green">Green Party</option>
-                  <option value="libertarian">Libertarian Party</option>
-                  <option value="no-preference">No party preference</option>
-                  <option value="other">Other</option>
-                </select>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inputrow">
+          <label for="party">Are you affiliated with a political party?</label>
+          <br>
+          <b>(link to register voting online)</b>
+
+          <select name="party" id="party">
+            <option hidden disabled selected>Select an option</option>
+            <option value="democratic">Democratic Party</option>
+            <option value="republican">Republican Party</option>
+            <option value="green">Green Party</option>
+            <option value="libertarian">Libertarian Party</option>
+            <option value="no-preference">No party preference</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
       </div>
 
       <div id="section5" hidden>
