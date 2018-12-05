@@ -22,6 +22,11 @@ a
   color: #acf;
 }
 
+h3
+{
+  color: #faa;
+}
+
 .capsule
 {
   background: rgb(0, 0, 0, .5);
@@ -67,6 +72,25 @@ h2
 {
   margin-top: 0;
   line-height: 1;
+}
+
+.inputrow
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputrow :first-child
+{
+  width: 60%;
+}
+
+.inputrow :last-child
+{
+  width: 40%;
 }
 
 p:first-child
