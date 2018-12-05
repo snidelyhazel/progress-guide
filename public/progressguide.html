@@ -24,24 +24,14 @@
     <form action="/make-progress" method="post">
 
       <div id="section1" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td colspan="2">
-                <label for="zipcode">Where in the galaxy are you?</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                 Enter your zip code:
-              </td>
-              <td>
-                <input name="zipcode" id="zipcode" type="text" required pattern="(\d{5})|(\d{5}-\d{4})" title="A zip code must take the form of XXXXX or XXXXX-XXXX" placeholder="XXXXX">
-                <button type="button" id="ziplook">Find my representatives!</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <h3>Where in the galaxy are you?</h3>
+
+        <div class="inputrow">
+          <label for="zipcode">Enter your zip code:</label>
+
+          <input name="zipcode" id="zipcode" type="text" required pattern="(\d{5})|(\d{5}-\d{4})" title="A zip code must take the form of XXXXX or XXXXX-XXXX" placeholder="XXXXX">
+        </div>
+        <!--<button type="button" id="ziplook">Find my representatives!</button>-->
       </div>
 
       <div id="section2" hidden>
