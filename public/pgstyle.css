@@ -103,6 +103,23 @@ p:last-child
   margin-bottom: 0;
 }
 
+#continueButton
+{
+  background: #800;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.continueContainer
+{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
 
 /*
 blue
