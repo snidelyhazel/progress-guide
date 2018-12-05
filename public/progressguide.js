@@ -23,12 +23,12 @@ $(document).ready(function()
   $("#ziplook").on("click", repSearch);
 
   // Enter key triggers popup window
-  $('#zipcode').keypress(function(event)
+  $('#surveyform').find('input').keypress(function(event)
   {
     // Enter key pressed
      if(event.which == 13)
      {
-       repSearch();
+       goToNextSection();
      }
    });
 
@@ -37,7 +37,8 @@ $(document).ready(function()
 
   surveySections[currentSection].removeAttr('hidden');
 
-  $('#continueButton').on("click", function(event)
+
+  function goToNextSection()
   {
     // Find inputs and selectors.
     const inputsOnThisSection = surveySections[currentSection].find("input, select");
@@ -60,7 +61,10 @@ $(document).ready(function()
       surveySections[currentSection].removeAttr('hidden');
       $('#intro').attr('hidden', '');
     }
-  });
+  }
+
+  $('#continueButton').on("click", goToNextSection);
+
 });
 
 //https://developers.google.com/civic-information/
