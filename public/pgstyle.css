@@ -81,6 +81,7 @@ h2
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
+  margin: 5px;
 }
 
 .inputrow :first-child
