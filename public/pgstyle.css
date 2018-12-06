@@ -94,6 +94,11 @@ h2
   width: 40%;
 }
 
+.checkcontain
+{
+  margin-left: 30px;
+}
+
 p:first-child
 {
   margin-top: 0;
