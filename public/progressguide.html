@@ -90,48 +90,32 @@
       </div>
 
       <div id="section5" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <label for="contribution">How are you able to contribute?</label>
-              </td>
-              <td>
-                Time <input name="contribution" id="contribution" type="range" min="0" max="100"> Money
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inputrow">
+          <label for="contribution">How are you able to contribute?</label>
+          <span>Time <input name="contribution" id="contribution" type="range" min="0" max="100"> Money</span>
+        </div>
       </div>
 
       <div id="section6" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                Do you have an organizational preference?
-              </td>
-              <td>
-                <label><input type="checkbox" name="organizational-preference" value="political">political: <br>organizations affiliated with a political party</label><br>
-                <label><input type="checkbox" name="organizational-preference" value="nongovernmental">nongovernmental: <br>nonprofits and independent organizations</label><br>
-                <label><input type="checkbox" name="organizational-preference" value="governmental">governmental: <br>supporting your government representatives, campaigns for candidates</label><br>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                At what level do you prefer to focus your efforts?
-              </td>
-              <td>
-                <label><input type="checkbox" name="level" value="local">local</label><br>
-                <label><input type="checkbox" name="level" value="city">city</label><br>
-                <label><input type="checkbox" name="level" value="county">county</label><br>
-                <label><input type="checkbox" name="level" value="state">state</label><br>
-                <label><input type="checkbox" name="level" value="regional">regional</label><br>
-                <label><input type="checkbox" name="level" value="federal">federal</label><br>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inputrow">
+          <label for="orgpref">Do you have an organizational preference?</label>
+          <div>
+            <label><input type="checkbox" name="organizational-preference" value="political">political: <br>organizations affiliated with a political party</label><br>
+            <label><input type="checkbox" name="organizational-preference" value="nongovernmental">nongovernmental: <br>nonprofits and independent organizations</label><br>
+            <label><input type="checkbox" name="organizational-preference" value="governmental">governmental: <br>supporting your government representatives, campaigns for candidates</label><br>
+          </div>
+        </div>
+        <div class="inputrow">
+          <label for="lvlpref">At what level do you prefer to focus your efforts?</label>
+          <div>
+            <label><input type="checkbox" name="level" value="local">local</label><br>
+            <label><input type="checkbox" name="level" value="city">city</label><br>
+            <label><input type="checkbox" name="level" value="county">county</label><br>
+            <label><input type="checkbox" name="level" value="state">state</label><br>
+            <label><input type="checkbox" name="level" value="regional">regional</label><br>
+            <label><input type="checkbox" name="level" value="federal">federal</label><br>
+          </div>
+        </div>
       </div>
 
       <div id="section7" hidden>
