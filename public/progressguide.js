@@ -62,6 +62,12 @@ $(document).ready(function(event)
       currentSection++;
       surveySections[currentSection].removeAttr('hidden');
       $('#intro').attr('hidden', '');
+
+      if (currentSection == surveySections.length - 1)
+      {
+        $('#continueButton').attr('hidden', '');
+        $('#submitButton').removeAttr('hidden');
+      }
     }
   }
 

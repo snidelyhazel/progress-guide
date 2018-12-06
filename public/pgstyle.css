@@ -109,7 +109,14 @@ p:last-child
   margin-bottom: 0;
 }
 
-#continueButton
+.continueContainer
+{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+button
 {
   background: #800;
   color: white;
@@ -118,13 +125,6 @@ p:last-child
   font-weight: bold;
   border-radius: 5px;
   padding: 10px;
-}
-
-.continueContainer
-{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 20px;
 }
 
 /*
