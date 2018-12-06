@@ -19,6 +19,7 @@ function repSearch()
 
 $(document).ready(function(event)
 {
+
   // Button click triggers popup window
   $("#ziplook").on("click", repSearch);
 
@@ -39,7 +40,7 @@ $(document).ready(function(event)
   surveySections[currentSection].removeAttr('hidden');
 
 
-  function goToNextSection()
+  function goToNextSection(debug)
   {
     // Find inputs and selectors.
     const inputsOnThisSection = surveySections[currentSection].find("input, select");
@@ -55,7 +56,7 @@ $(document).ready(function(event)
       }
     }
 
-    if (!anyInvalidInputs)
+    if (!anyInvalidInputs || debug)
     {
       surveySections[currentSection].attr('hidden', '');
       currentSection++;
@@ -63,6 +64,14 @@ $(document).ready(function(event)
       $('#intro').attr('hidden', '');
     }
   }
+
+  document.documentElement.addEventListener('keypress', function(event)
+  {
+    if (event.key == '`' || event.key == '~')
+    {
+      goToNextSection(true);
+    }
+  });
 
   $('#continueButton').on("click", goToNextSection);
 
