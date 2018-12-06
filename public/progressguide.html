@@ -97,39 +97,39 @@
       </div>
 
       <div id="section6" hidden>
-        <div class="inputrow">
-          <label for="orgpref">Do you have an organizational preference?</label>
-          <div>
-            <label><input type="checkbox" name="organizational-preference" value="political">political: <br>organizations affiliated with a political party</label><br>
-            <label><input type="checkbox" name="organizational-preference" value="nongovernmental">nongovernmental: <br>nonprofits and independent organizations</label><br>
-            <label><input type="checkbox" name="organizational-preference" value="governmental">governmental: <br>supporting your government representatives, campaigns for candidates</label><br>
-          </div>
+        <label for="orgpref">Do you have an organizational preference?</label>
+        <div class="checkcontain">
+          <label title="organizations affiliated with a political party"><input type="checkbox" name="organizational-preference" value="political">political organizations</label><br>
+          <label title="organizations focused on causes and policies"><input type="checkbox" name="organizational-preference" value="nongovernmental">nonprofit organizations</label><br>
+          <label title="campaigns for representatives and candidates"><input type="checkbox" name="organizational-preference" value="governmental">representatives and candidates</label><br>
         </div>
-        <div class="inputrow">
-          <label for="lvlpref">At what level do you prefer to focus your efforts?</label>
-          <div>
-            <label><input type="checkbox" name="level" value="local">local</label><br>
-            <label><input type="checkbox" name="level" value="city">city</label><br>
-            <label><input type="checkbox" name="level" value="county">county</label><br>
-            <label><input type="checkbox" name="level" value="state">state</label><br>
-            <label><input type="checkbox" name="level" value="regional">regional</label><br>
-            <label><input type="checkbox" name="level" value="federal">federal</label><br>
-          </div>
+        <label for="lvlpref">At what level do you prefer to focus your efforts?</label>
+        <div class="checkcontain">
+          <label><input type="checkbox" name="level" value="local">local</label><br>
+          <label><input type="checkbox" name="level" value="state">state</label><br>
+          <label><input type="checkbox" name="level" value="regional">regional</label><br>
+          <label><input type="checkbox" name="level" value="federal">federal</label><br>
         </div>
       </div>
 
       <div id="section7" hidden>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                What issues that are important to you?
-              </td>
-              <td>
-                <!-- <label><input type="checkbox" name="level" value="local">local</label><br> -->
-                <!-- select an option to see suboptions -->
+        <div class="inputrow">
+          labor practices
+          gender equality
+          racial equality
+          LGBTQ+ equality
+          voting access
+          education
+          economy
+          environment
+          healthcare
+          immigration
+          veterans rights
+          homelessness
 
+          <!-- <label><input type="checkbox" name="level" value="local">local</label><br> -->
 
+              <!--
                 labor, wages, fight for 15, fair scheduling
                 economic, regulation, taxation, stopping corporate concentration, fair trade deals
                 women's rights, reproductive autonomy, equal pay
@@ -146,10 +146,8 @@
                 homelessness, homeownership, affordable housing
                 social safety net, social security
                 civil rights, criminal justice reform, indigenous sovereignty
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              -->
+          </div>
         <input type="submit" value="Submit">
       </div>
       <div class="continueContainer">
