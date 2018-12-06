@@ -29,6 +29,7 @@ $(document).ready(function(event)
      if(event.which == 13)
      {
        goToNextSection();
+       event.preventDefault();
      }
    });
 
