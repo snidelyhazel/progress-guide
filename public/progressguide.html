@@ -65,10 +65,17 @@
 
       <div id="section4" hidden>
         <div class="inputrow">
+          <label for="voterstatus">Are you registered to vote?</label>
+          <select name="voterstatus" id="voterstatus">
+            <option hidden disabled selected>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="updateinfo">I need to update my information</option>
+            <option value="dontknow">I don't know</option>
+          </select>
+        </div>
+        <div class="inputrow" id="voteraffiliation" style='display: none'>
           <label for="party">Are you affiliated with a political party?</label>
-          <br>
-          <b>(link to register voting online)</b>
-
           <select name="party" id="party">
             <option hidden disabled selected>Select an option</option>
             <option value="democratic">Democratic Party</option>
@@ -79,6 +86,7 @@
             <option value="other">Other</option>
           </select>
         </div>
+        <!--<button type="button" id="registertovote">Register to vote!</button>-->
       </div>
 
       <div id="section5" hidden>

@@ -66,6 +66,24 @@ $(document).ready(function(event)
 
   $('#continueButton').on("click", goToNextSection);
 
+  $('#voterstatus').on("change", function()
+  {
+    if ($('#voterstatus').val() === 'yes')
+    {
+      $('#voteraffiliation').css({'display': ''});
+    }
+    else
+    {
+      $('#voteraffiliation').css({'display': 'none'});
+    }
+  })
+
+
+  // Register to vote
+  // https://registertovote.ca.gov/
+  //$("#registertovote").on("click", popupWindow("https://registertovote.ca.gov/");
+
+
 });
 
 //https://developers.google.com/civic-information/
