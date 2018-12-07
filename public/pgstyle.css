@@ -20,6 +20,13 @@ body
 a
 {
   color: #acf;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #faa;
+  text-decoration: underline;
 }
 
 .nav
@@ -77,6 +84,7 @@ h3
 ul
 {
   white-space: normal;
+  margin: 0;
 }
 
 .has-error

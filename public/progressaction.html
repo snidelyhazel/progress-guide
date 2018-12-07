@@ -4,17 +4,49 @@
   <link rel="stylesheet" type="text/css" href="/pgstyle.css"/>
 </head>
 <body>
-Action items!
 
-{
+  <div class="nav">
+    <h1>The&nbsp;Progressive's&nbsp;Guide to Saving&nbsp;Democracy</h1>
+  </div>
+
+  <h2>Action items!</h2>
+
   {{#each entries}}
-    <div>
-      <strong>{{name}}</strong>
-      <em>{{website}}</em>
-      <a href="{{join}}" onclick="openJoin(this, event)" target="_blank">Join</a>
+    <div class="capsule">
+      <div>
+        <strong><a href="{{website}}" target="_blank">{{name}}</a></strong>
+      </div>
+      <ul>
+      {{#if join}}
+        <li><div>
+          Mailing List: <a href="{{join}}" target="_blank">Join</a>
+        </div></li>
+      {{/if}}
+      {{#if donate}}
+        {{#if onetimeDonate}}
+          <li><div>
+            Donate: <a href="{{donate}}" target="_blank">One-Time</a>
+          </div></li>
+        {{/if}}
+        {{#if ongoingDonate}}
+          <li><div>
+            Donate: <a href="{{donate}}" target="_blank">Ongoing</a>
+          </div></li>
+        {{/if}}
+      {{/if}}
+      {{#if volunteer}}
+        <li><div>
+          Volunteer: <a href="{{volunteer}}" target="_blank">Opportunities</a>
+        </div></li>
+      {{/if}}
+      {{#if calendar}}
+        <li><div>
+          Calendar: <a href="{{calendar}}" target="_blank">Events</a>
+        </div></li>
+      {{/if}}
     </div>
   {{/each}}
-}
+
   <script src="pgcommon.js"></script>
   <script src="progressaction.js"></script>
 </body>
