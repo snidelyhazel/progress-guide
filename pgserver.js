@@ -9,15 +9,18 @@ var bodyParser = require('body-parser');
 // URL-encoded bodies
 app.use(bodyParser.urlencoded({extended: true}));
 
-// Load database file as string
-var databaseFile = fs.readFileSync("database.json");
-// Parse database file
-var databaseJSON = JSON.parse(databaseFile);
-
-db.insert(databaseJSON, function (err, dbEntries)
+for (var databaseFilename of fs.readdirSync('categories'))
 {
-  // The dbEntries parameter is an array containing these entries, augmented with their _id.
-});
+  // Load database file as string
+  var databaseFile = fs.readFileSync('categories/' + databaseFilename);
+  // Parse database file
+  var databaseJSON = JSON.parse(databaseFile);
+
+  db.insert(databaseJSON, function (err, dbEntries)
+  {
+    // The dbEntries parameter is an array containing these entries, augmented with their _id.
+  });
+}
 
 function arrayify(postdata)
 {

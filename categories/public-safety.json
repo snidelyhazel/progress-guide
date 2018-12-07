@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Moms Demand Action",
+    "website": "http://momsdemandaction.org",
+    "join": "https://act.everytown.org/signup/Join-Moms/",
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": ["local", "federal"],
+    "age": "all-ages",
+    "cause": "gun-violence"
+  },
+  {
+    "name": "Arms Control Association",
+    "cause": "nonproliferation",
+    "website": "https://armscontrol.org",
+    "notes": "email signup at bottom of package",
+    "donate": "https://armscontrol.org/donate",
+    "join": "https://armscontrol.org/join",
+    "level": "federal"
+  }
+]

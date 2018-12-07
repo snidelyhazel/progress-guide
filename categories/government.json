@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Katie Hill for Congress",
+    "website": "http://katiehillforcongress.com",
+    "time": "true",
+    "money": "true",
+    "type": "governmental",
+    "level": ["local", "federal"],
+    "age": "all-ages",
+    "cause": "candidate-campaign"
+  }
+]

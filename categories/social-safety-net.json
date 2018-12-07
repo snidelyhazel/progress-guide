@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rescuing Leftover Cuisine",
+    "website": "https://www.rescuingleftovercuisine.org/",
+    "volunteer": "https://www.rescuingleftovercuisine.org/volunteer",
+    "LA calendar": "http://bit.ly/2EjtMwm",
+    "SF calendar": "http://bit.ly/2EjtVQq",
+    "onetimeDonate": "https://www.rescuingleftovercuisine.org/sponsor-a-meal",
+    "ongoingDonate": "https://www.rescuingleftovercuisine.org/full-plate-fund",
+    "level": ["local", "regional"]
+  },
+  {
+    "name": "Feeding America",
+    "website": "https://www.feedingamerica.org/",
+    "notes": "subscribe link in banner",
+    "volunteer": "https://www.feedingamerica.org/take-action/campaigns/volunteer",
+    "find volunteer": "https://www.feedingamerica.org/find-your-local-foodbank",
+    "onetimeDonate": "http://help.feedingamerica.org/site/Donation2?25431_donation=form1",
+    "ongoingDonate": "https://secure.feedingamerica.org/site/Donation2?df_id=26130&26130.donation=form1]",
+    "level": ["local", "federal"]
+  }
+]
