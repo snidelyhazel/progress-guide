@@ -16,27 +16,29 @@
   <div class="capsule">
     <h3>Vote!</h3>
     <h4>It's the most important thing you can do to save democracy!<h4>
-    {{#if yes}}
-      - Thank you for being a voter! Let's check your voter registration information!
-    {{/if}}
-    {{#if dontknow}}
-      - Let's find out if you're registered to vote! Check your voter registration status!
-    {{/if}}
-    {{#if updateinfo}}
-      - Let's make sure your voter information is accurate! Update your voter registration information now!
-    {{/if}}
-    {{#if no}}
-      - Let's register to vote! Please register only if you're an eligible U.S. citizen.
-    {{/if}}
-    {{#if preregyes}}
-      - Thank you for being an engaged citizen! Let's check your voter preregistration information!
-    {{/if}}
-    {{#if preregno}}
-      - Let's preregister to vote! Please preregister only if you're an eligible U.S. citizen.
-    {{/if}}
-    {{#if ineligible}}
-      - Remember to preregister to vote when you're 16! Thank you for being an engaged citizen!
-    {{/if}}
+    <p>
+      {{#if yes}}
+        Thank you for being a voter! <a href="https://voterstatus.sos.ca.gov/" target="_blank">Let's check your voter registration information!</a>
+      {{/if}}
+      {{#if dontknow}}
+        Let's find out if you're registered to vote! <a href="https://voterstatus.sos.ca.gov/" target="_blank">Check your voter registration status!</a>
+      {{/if}}
+      {{#if updateinfo}}
+        Let's make sure your voter information is accurate! <a href="https://registertovote.ca.gov/" target="_blank">Update your voter registration information now!</a>
+      {{/if}}
+      {{#if no}}
+        <a href="https://registertovote.ca.gov/" target="_blank">Let's register to vote!</a> Please register only if you're an eligible U.S. citizen.
+      {{/if}}
+      {{#if preregyes}}
+        Thank you for being an engaged citizen! <a href="https://voterstatus.sos.ca.gov/" target="_blank">Let's check your voter preregistration information!</a>
+      {{/if}}
+      {{#if preregno}}
+        <a href="https://registertovote.ca.gov/" target="_blank">Let's preregister to vote!</a> Please preregister only if you're an eligible U.S. citizen.
+      {{/if}}
+      {{#if ineligible}}
+        Remember to preregister to vote when you're 16! Thank you for being an engaged citizen!
+      {{/if}}
+    </p>
   </div>
   <div class="capsule">
     <h3>Get involved!</h3>
