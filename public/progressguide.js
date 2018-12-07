@@ -39,8 +39,7 @@ $(document).ready(function(event)
 
   surveySections[currentSection].removeAttr('hidden');
 
-
-  function goToNextSection(debug)
+  function checkValidity()
   {
     // Find inputs and selectors.
     const inputsOnThisSection = surveySections[currentSection].find("input, select");
@@ -56,6 +55,22 @@ $(document).ready(function(event)
       }
     }
 
+    const checkContains = surveySections[currentSection].find(".checkcontain.required");
+    for (const checkContain of checkContains)
+    {
+      if ($(checkContain).find(':checkbox:checked').length == 0)
+      {
+        anyInvalidInputs = true;
+      }
+    }
+
+    return anyInvalidInputs;
+  }
+
+  function goToNextSection(debug)
+  {
+    const anyInvalidInputs = checkValidity();
+
     if (!anyInvalidInputs || debug)
     {
       surveySections[currentSection].attr('hidden', '');
@@ -70,6 +85,19 @@ $(document).ready(function(event)
       }
     }
   }
+
+  function submitSurvey(event)
+  {
+    const anyInvalidInputs = checkValidity();
+    if (anyInvalidInputs)
+    {
+      event.preventDefault();
+      return false;
+    }
+  }
+
+  $('#surveyform').submit(submitSurvey);
+  $('#submitButton').on("click", submitSurvey);
 
   document.documentElement.addEventListener('keypress', function(event)
   {
