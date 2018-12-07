@@ -75,6 +75,32 @@ $(document).ready(function(event)
     {
       surveySections[currentSection].attr('hidden', '');
       currentSection++;
+
+      // If user is not eligible to vote by dint of age, don't display the voter status and political affiliation inputs.
+      if (currentSection == 3)
+      {
+        console.log("age: ", parseInt($('#age').val()));
+        if (parseInt($('#age').val()) < 16)
+        {
+          console.log("skipping");
+          currentSection++;
+        }
+        else
+        {
+          // If user is eligible to preregister to vote.
+          if (parseInt($('#age').val()) < 18)
+          {
+            console.log("show prereg");
+            $("#preregRow").css({'display': ''});
+          }
+          else
+          {
+            console.log("show reg");
+            $("#voterstatusRow").css({'display': ''});
+          }
+        }
+      }
+
       surveySections[currentSection].removeAttr('hidden');
       $('#intro').attr('hidden', '');
 

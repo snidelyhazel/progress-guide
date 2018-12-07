@@ -68,7 +68,24 @@ app.post('/make-progress', function (req, res)
       // The entries parameter is an array containing matching entries.
       // If no entry is found, entries is equal to [].
       var template = handlebars.compile(source);
-      var html = template({entries: entries});
+
+      var handlebarsParams = {entries: entries};
+
+      if (parseInt(req.body.age) < 16)
+      {
+        handlebarsParams.ineligible = true;
+      }
+      else if (parseInt(req.body.age) < 18)
+      {
+        handlebarsParams["prereg" + req.body.prereg] = true;
+      }
+      else
+      {
+        handlebarsParams[req.body.voterstatus] = true;
+      }
+
+      var html = template(handlebarsParams);
+
 
       res.send(html);
     });
