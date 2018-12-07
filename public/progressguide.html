@@ -64,7 +64,15 @@
       </div>
 
       <div id="section4" hidden>
-        <div class="inputrow">
+        <div class="inputrow" id="preregRow" style="display: none;">
+          <label for="prereg">Are you preregistered to vote?</label>
+          <select name="prereg">
+            <option hidden disabled selected>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="inputrow" id="voterstatusRow" style="display: none;">
           <label for="voterstatus">Are you registered to vote?</label>
           <select name="voterstatus" id="voterstatus">
             <option hidden disabled selected>Select an option</option>
@@ -74,7 +82,7 @@
             <option value="dontknow">I don't know</option>
           </select>
         </div>
-        <div class="inputrow" id="voteraffiliation" style='display: none'>
+        <div class="inputrow" id="voteraffiliation" style="display: none;">
           <label for="party">Are you affiliated with a political party?</label>
           <select name="party" id="party">
             <option hidden disabled selected>Select an option</option>
