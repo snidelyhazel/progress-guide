@@ -131,8 +131,16 @@ button
 .continueContainer
 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
   margin-top: 20px;
+  position: relative;
+}
+
+#backButton
+{
+  position: absolute;
+  left: 0;
 }
 
 /*
