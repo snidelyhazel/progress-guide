@@ -29,7 +29,7 @@ $(document).ready(function(event)
     // Enter key pressed
      if(event.which == 13)
      {
-       goToNextSection();
+       goToNextSection(true, false);
        event.preventDefault();
      }
    });
@@ -67,48 +67,73 @@ $(document).ready(function(event)
     return anyInvalidInputs;
   }
 
-  function goToNextSection(debug)
+  function goToNextSection(direction, debug)
   {
-    const anyInvalidInputs = checkValidity();
+    console.log("call me! " + direction + " " + debug);
+    if (direction)
+    {
+      const anyInvalidInputs = checkValidity();
 
-    if (!anyInvalidInputs || debug)
+      if (!anyInvalidInputs || debug)
+      {
+        surveySections[currentSection].attr('hidden', '');
+        currentSection++;
+
+        // If user is not eligible to vote by dint of age, don't display the voter status and political affiliation inputs.
+        if (currentSection == 3)
+        {
+          if (parseInt($('#age').val()) < 16)
+          {
+            currentSection++;
+          }
+          else
+          {
+            // If user is eligible to preregister to vote.
+            if (parseInt($('#age').val()) < 18)
+            {
+              $("#preregRow").css({'display': ''});
+            }
+            else
+            {
+              $("#voterstatusRow").css({'display': ''});
+            }
+          }
+        }
+
+        $('#backButton').removeAttr('hidden');
+        if (currentSection == surveySections.length - 1)
+        {
+          $('#continueButton').attr('hidden', '');
+          $('#submitButton').removeAttr('hidden');
+        }
+
+        surveySections[currentSection].removeAttr('hidden');
+        $('#intro').attr('hidden', '');
+      }
+    }
+    else
     {
       surveySections[currentSection].attr('hidden', '');
-      currentSection++;
+      currentSection--;
 
       // If user is not eligible to vote by dint of age, don't display the voter status and political affiliation inputs.
       if (currentSection == 3)
       {
-        console.log("age: ", parseInt($('#age').val()));
         if (parseInt($('#age').val()) < 16)
         {
-          console.log("skipping");
-          currentSection++;
-        }
-        else
-        {
-          // If user is eligible to preregister to vote.
-          if (parseInt($('#age').val()) < 18)
-          {
-            console.log("show prereg");
-            $("#preregRow").css({'display': ''});
-          }
-          else
-          {
-            console.log("show reg");
-            $("#voterstatusRow").css({'display': ''});
-          }
+          currentSection--;
         }
       }
 
-      surveySections[currentSection].removeAttr('hidden');
-      $('#intro').attr('hidden', '');
-
-      if (currentSection == surveySections.length - 1)
+      if (currentSection == 0)
       {
-        $('#continueButton').attr('hidden', '');
-        $('#submitButton').removeAttr('hidden');
+        $('#backButton').attr('hidden', '');
+        $('#intro').removeAttr('hidden');
       }
+
+      $('#continueButton').removeAttr('hidden');
+      $('#submitButton').attr('hidden', '');
+      surveySections[currentSection].removeAttr('hidden');
     }
   }
 
@@ -129,11 +154,12 @@ $(document).ready(function(event)
   {
     if (event.key == '`' || event.key == '~')
     {
-      goToNextSection(true);
+      goToNextSection(true, true);
     }
   });
 
-  $('#continueButton').on("click", goToNextSection);
+  $('#backButton').on("click", () => goToNextSection(false, false));
+  $('#continueButton').on("click", () => goToNextSection(true, false));
 
   $('#voterstatus').on("change", function()
   {
