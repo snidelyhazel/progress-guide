@@ -2,9 +2,12 @@
   {
     "name": "Donors Choose",
     "website": "https://donorschoose.org",
-    "cause": "education",
-    "volunteer": "https://donorschoose.org/volunteer",
-    "notes": "email signup at bottom of page. (NY)",
-    "level": "federal"
+    "donate": "https://www.donorschoose.org/donors/search.html",
+    "volunteerNY": "https://donorschoose.org/volunteer",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "education"
   }
 ]

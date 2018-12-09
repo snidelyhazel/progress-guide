@@ -1,0 +1,37 @@
+[
+  {
+    "name": "National Resources Defense Council",
+    "website": "https://www.nrdc.org/",
+    "onetimeDonate": "https://act.nrdc.org/donate/one-time",
+    "ongoingDonate": "https://act.nrdc.org/donate/monthly",
+    "join": "https://www.nrdc.org/get-involved",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "environment"
+  },
+  {
+    "name": "Environmental Defense Fund",
+    "website": "https://www.edf.org",
+    "donate": "https://membership.onlineaction.org/site/Donation2",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "environment"
+  },
+  {
+    "name": "Earthjustice",
+    "website": "https://earthjustice.org/about/offices/california",
+    "action": "https://earthjustice.org/action",
+    "onetimeDonate": "https://secure.earthjustice.org/site/Donation2",
+    "ongoingDonate": "https://secure.earthjustice.org/site/Donation2?df_id=10900",
+    "join": "https://secure.earthjustice.org/site/Donation2?df_id=10880",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "environment"
+  }
+]

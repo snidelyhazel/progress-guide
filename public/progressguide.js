@@ -69,7 +69,6 @@ $(document).ready(function(event)
 
   function goToNextSection(direction, debug)
   {
-    console.log("call me! " + direction + " " + debug);
     if (direction)
     {
       const anyInvalidInputs = checkValidity();

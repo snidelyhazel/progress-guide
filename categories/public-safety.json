@@ -8,15 +8,20 @@
     "type": "nongovernmental",
     "level": ["local", "federal"],
     "age": "all-ages",
-    "cause": "gun-violence"
+    "cause": "gun violence"
   },
   {
-    "name": "Arms Control Association",
-    "cause": "nonproliferation",
-    "website": "https://armscontrol.org",
-    "notes": "email signup at bottom of package",
-    "donate": "https://armscontrol.org/donate",
-    "join": "https://armscontrol.org/join",
-    "level": "federal"
+    "name": "Everytown for Gun Safety",
+    "website": "https://everytown.org/",
+    "donate": "https://secure.actblue.com/contribute/page/ab-everytown-default/",
+    "join": "https://everytown.org/act/",
+    "calendar": "https://act.everytown.org/event/moms-demand-action-event/search/",
+    "volunteer": "https://everytown.ngpvanhost.com/onlineactions/RvQymTQk-E-Eyw-jFksSHg2",
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": ["local", "federal"],
+    "age": "all-ages",
+    "cause": "gun violence"
   }
 ]

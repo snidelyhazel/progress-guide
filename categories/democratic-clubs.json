@@ -1,0 +1,99 @@
+[
+  {
+    "website": "https://caldc.org/find-a-club/"
+  },
+  {
+    "name": "Stonewall Democratic Club",
+    "website": "https://www.stonewalldems.org/",
+    "join": "https://www.stonewalldems.org/join",
+    "email": "https://www.stonewalldems.org/join_email_list",
+    "calendar": "https://www.stonewalldems.org/events",
+    "donate": "https://www.stonewalldems.org/donate",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["lgbtq equality", "government", "representation"]
+  },
+  {
+    "name": "San Fernando Valley Young Democrats",
+    "website": "http://www.sfvyd.org/",
+    "join": "https://secure.actblue.com/contribute/page/joinsfvyd",
+    "calendar": "http://www.sfvyd.org/calendar",
+    "facebook": "https://www.facebook.com/SFVYD/",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  },
+  {
+    "name": "Pacific Palisades Democratic Club",
+    "website": "http://www.palisadesdemclub.org/",
+    "volunteer": "http://www.palisadesdemclub.org/volunteer",
+    "donate": "https://secure.actblue.com/donate/donate18",
+    "join": "http://www.palisadesdemclub.org/join",
+    "calendar": "http://www.palisadesdemclub.org/events",
+    "facebook": "https://www.facebook.com/PaliDems/",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  },
+  {
+    "name": "Santa Monica Democratic Club",
+    "website": "https://santamonicademocrats.com/",
+    "facebook": "https://www.facebook.com/santamonicademocrats",
+    "email": "mailto:someone@yoursite.com?subject=add%20me%20to%20your%20mailing%20list",
+    "join": "https://santamonicademocrats.com/join-our-club/",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  },
+  {
+    "name": "Westchester Playa Democratic Club",
+    "website": "https://www.westchesterplayademclub.org/westside-dem-hq/",
+    "join": "https://www.westchesterplayademclub.org/membership",
+    "calendar": "https://www.westchesterplayademclub.org/upcoming-events/",
+    "facebook": "https://www.facebook.com/groups/westchesterdems",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  },
+  {
+    "name": "Westside Democratic HQ",
+    "website": "https://westsidedemhq.org/",
+    "facebook": "https://www.facebook.com/WestsideDemHQ/",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  },
+  {
+    "name": "Code Blue"
+  },
+  {
+    "name": "Heart of LA Democratic Club"
+  },
+  {
+    "name": "Swing SoCal Left"
+  },
+  {
+    "name": "West LA Democratic Club",
+    "website": "https://www.westlademocrats.org/",
+    "join": "https://secure.actblue.com/contribute/page/wladcjoin",
+    "calendar": "https://www.westlademocrats.org/calendar",
+    "volunteer": "https://www.westlademocrats.org/volunteer",
+    "level": "local",
+    "type": "political",
+    "time": "true",
+    "money": "true",
+    "cause": ["government", "representation"]
+  }
+]

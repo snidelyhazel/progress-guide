@@ -1,5 +1,28 @@
 [
   {
+    "name": "MapLight",
+    "website": "https://maplight.org/",
+    "donate": "https://maplight.org/donate/",
+    "cause": ["government", "transparency"],
+    "level": "federal",
+    "type": "nonprofit",
+    "age": "all-ages",
+    "time": "false",
+    "money": "true"
+  },
+  {
+    "name": "ProPublica",
+    "website": "https://www.propublica.org/",
+    "donate": "https://donate.propublica.org/give/141278/#!/donation/checkout",
+    "join": "https://www.propublica.org/getinvolved/",
+    "cause": ["government", "transparency"],
+    "level": ["local", "federal"],
+    "type": "nonprofit",
+    "age": "all-ages",
+    "time": "false",
+    "money": "true"
+  },
+  {
     "name": "Katie Hill for Congress",
     "website": "http://katiehillforcongress.com",
     "time": "true",

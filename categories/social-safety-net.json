@@ -7,7 +7,11 @@
     "SF calendar": "http://bit.ly/2EjtVQq",
     "onetimeDonate": "https://www.rescuingleftovercuisine.org/sponsor-a-meal",
     "ongoingDonate": "https://www.rescuingleftovercuisine.org/full-plate-fund",
-    "level": ["local", "regional"]
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": ["local", "regional"],
+    "cause": "food insecurity"
   },
   {
     "name": "Feeding America",
@@ -17,6 +21,10 @@
     "find volunteer": "https://www.feedingamerica.org/find-your-local-foodbank",
     "onetimeDonate": "http://help.feedingamerica.org/site/Donation2?25431_donation=form1",
     "ongoingDonate": "https://secure.feedingamerica.org/site/Donation2?df_id=26130&26130.donation=form1]",
-    "level": ["local", "federal"]
+    "time": "true",
+    "money": "true",
+    "type": "nongovernmental",
+    "level": ["local", "federal"],
+    "cause": "food insecurity"
   }
 ]
