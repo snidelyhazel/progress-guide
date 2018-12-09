@@ -34,7 +34,7 @@ $(document).ready(function(event)
      }
    });
 
-  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4'), $('#section5'), $('#section6'),];
+  const surveySections = [$('#section1'), $('#section2'), $('#section3'), $('#section4'), $('#section5'), $('#section6'), $('#section7')];
   let currentSection = 0;
 
   surveySections[currentSection].removeAttr('hidden');

@@ -63,7 +63,7 @@ app.post('/make-progress', function (req, res)
   {
     if (err) throw err;
 
-    db.find({level: {$in: arrayify(req.body.level)}}, function (err, entries)
+    db.find({level: {$in: arrayify(req.body.level)}, cause: {$in: arrayify(req.body.cause)}}, function (err, entries)
     {
       // The entries parameter is an array containing matching entries.
       // If no entry is found, entries is equal to [].

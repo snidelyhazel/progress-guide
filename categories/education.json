@@ -9,5 +9,16 @@
     "time": "false",
     "money": "true",
     "cause": "education"
+  },
+  {
+    "name": "National Consumer Law Center",
+    "website": "https://www.nclc.org/",
+    "donate": "https://www.nclc.org/about-us/support-our-work.html",
+    "action": "https://www.nclc.org/issues/take-action.html",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["education", "student debt relief", "economy"]
   }
 ]
