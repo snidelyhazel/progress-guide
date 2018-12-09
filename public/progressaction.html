@@ -56,16 +56,19 @@
         </div></li>
       {{/if}}
       {{#if donate}}
-        {{#if onetimeDonate}}
-          <li><div>
-            Donate: <a href="{{donate}}" target="_blank">One-Time</a>
-          </div></li>
-        {{/if}}
-        {{#if ongoingDonate}}
-          <li><div>
-            Donate: <a href="{{donate}}" target="_blank">Ongoing</a>
-          </div></li>
-        {{/if}}
+        <li><div>
+          Donate: <a href="{{donate}}" target="_blank">One-Time</a>
+        </div></li>
+      {{/if}}
+      {{#if onetimeDonate}}
+        <li><div>
+          Donate: <a href="{{onetimeDonate}}" target="_blank">One-Time</a>
+        </div></li>
+      {{/if}}
+      {{#if ongoingDonate}}
+        <li><div>
+          Donate: <a href="{{ongoingDonate}}" target="_blank">Ongoing</a>
+        </div></li>
       {{/if}}
       {{#if volunteer}}
         <li><div>
