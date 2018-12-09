@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "name": "Equal Justice Initiative",
+    "website": "https://eji.org/",
+    "join": "https://eji.org/sign-up",
+    "donate": "https://donatenow.networkforgood.org/eji",
+    "action": "https://eji.org/get-involved",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["civil rights", "racial equality", "criminal justice reform"]
+  },
+  {
+    "name": "Human Rights Campaign",
+    "website": "https://www.hrc.org/",
+    "donate": "https://give.hrc.org/page/31622/donate/1",
+    "calendar": "https://www.hrc.org/local-issues/california/events",
+    "level": ["local", "federal"],
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "lgbtq equality"
+  },
+  {
+    "name": "American Civil Liberties Union",
+    "website": "https://www.aclu.org/",
+    "onetimeDonate": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-1",
+    "ongoingDonate": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-3",
+    "join": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-4",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "civil rights"
+  },
+  {
+    "name": "Southern Povery Law Center",
+    "website": "https://www.splcenter.org/",
+    "donate": "https://donate.splcenter.org/sslpage.aspx?pid=463",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["civil rights", "domestic terrorism"]
+  }
+]

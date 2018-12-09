@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "name": "The Carter Center",
+    "website": "https://www.cartercenter.org/",
+    "calendar": "https://www.cartercenter.org/news/upcoming_events/index.html",
+    "email": "http://carter.convio.net/site/PageServer?pagename=email_signup",
+    "volunteerGA": "https://www.cartercenter.org/involved/volunteers/index.html",
+    "onetimeDonate": "https://secure3.convio.net/carter/site/Donation2?1220.donation=form1&df_id=1220",
+    "ongoingDonate": "https://www.cartercenter.org/donate/peacekeepers/index.html",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": "foreign policy"
+  },
+  {
+    "name": "Center for International Policy",
+    "website": "https://www.internationalpolicy.org/",
+    "donate": "https://www.internationalpolicy.org/donate",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["foreign policy", "nonproliferation"]
+  },
+  {
+    "name": "Arms Control Association",
+    "cause": "nonproliferation",
+    "website": "https://armscontrol.org",
+    "donate": "https://armscontrol.org/donate",
+    "join": "https://armscontrol.org/join",
+    "level": "federal"
+  },
+  {
+    "name": "Food Not Bombs",
+    "website": "http://foodnotbombs.net",
+    "action": "http://foodnotbombs.net/new_site/volunteer.php",
+    "volunteer": "http://foodnotbombs.net/new_site/contacts.php",
+    "onetimeDonate": "http://foodnotbombs.net/new_site/donate.php",
+    "ongoingDonate": "http://foodnotbombs.net/new_site/donatemonthly.php",
+    "level": ["local", "federal"],
+    "type": "nongovernmental",
+    "time": "true",
+    "money": "true",
+    "cause": ["foreign policy", "food insecurity"]
+  }
+]
