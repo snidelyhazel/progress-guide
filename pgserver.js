@@ -139,6 +139,8 @@ app.post('/make-progress', function (req, res)
           handlebarsParams.showRegistrationInfo = true;
         }
 
+        handlebarsParams.zipcode = req.body.zipcode;
+
         var html = template(handlebarsParams);
 
 

@@ -9,20 +9,9 @@ for(var i=0;i<inputs.length;i++) {
   });
 }
 
-// Find representatives by zipcode
-
-// Show popup window with House of Representatives search results
-function repSearch()
-{
-  popupWindow("https://ziplook.house.gov/htbin/findrep_house?ZIP=" + ($("#zipcode").val()));
-}
 
 $(document).ready(function(event)
 {
-
-  // Button click triggers popup window
-  $("#ziplook").on("click", repSearch);
-
   // Enter key triggers popup window
   $('#surveyform').find('input').keypress(function(event)
   {
