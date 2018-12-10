@@ -139,7 +139,12 @@ app.post('/make-progress', function (req, res)
           handlebarsParams.showRegistrationInfo = true;
         }
 
+        // Zipcode as a string for search parameter.
         handlebarsParams.zipcode = req.body.zipcode;
+
+        // Convert to number for comparison.
+        var zipval = parseInt(req.body.zipcode);
+        handlebarsParams.lazipcode = (zipval >= 90001 && zipval <= 93591);
 
         var html = template(handlebarsParams);
 

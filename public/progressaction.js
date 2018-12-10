@@ -7,7 +7,7 @@ function openJoin(anchor, event)
 // Find representatives by zipcode
 
 // Show popup window with House of Representatives search results
-function repSearch(event)
+function localSearch(event)
 {
   //popupWindow("https://ziplook.house.gov/htbin/findrep_house?ZIP=" + ($("#zipcode").val()));
   popupWindow($(event.target).attr('href'));
@@ -16,5 +16,6 @@ function repSearch(event)
 $(document).ready(function(event)
 {
   // Button click triggers popup window
-  $("#ziplook").on("click", repSearch);
+  $("#ziplook").on("click", localSearch);
+  $("#pollLocatorLA").on("click", localSearch);
 });
