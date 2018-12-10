@@ -15,6 +15,7 @@ body
   font-size: 20px;
   line-height: 1.4;
   margin: 0;
+/*  margin-top: 200px;*/
 }
 
 a
@@ -25,8 +26,7 @@ a
 
 a:hover
 {
-  color: #faa;
-  text-decoration: underline;
+  color: #79d;
 }
 
 .nav
@@ -37,6 +37,9 @@ a:hover
   border-image-outset: 0;
   border-image-repeat: stretch;
   /*
+  width: 100vw;
+  position: fixed;
+  top: 25px;
   background: rgb(255, 0, 0, .5);
   position: absolute;
   top: 0;
@@ -48,8 +51,11 @@ a:hover
 .nav h1
 {
   padding: 20px .5em;
-  margin-top: 10px;
   text-align: center;
+  /*
+  margin: 0px;
+  margin-bottom: 5px;
+  */
 }
 
 h2
@@ -143,6 +149,23 @@ button
   left: 0;
 }
 
+.filterLabelContainer
+{
+  float: right;
+  max-width: 300px;
+  text-align: center;
+}
+.filterLabel
+{
+  background: #900;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: smaller;
+  font-weight: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+  line-height: 1.2;
+}
 /*
 blue
 #2E5C9B
