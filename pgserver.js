@@ -65,11 +65,11 @@ app.post('/make-progress', function (req, res)
 
     var contributionValue = parseInt(req.body.contribution);
     var contributionFilter;
-    if (contributionValue <= 66)
+    if (contributionValue <= 33)
     {
       contributionFilter = [{time: 'true'}];
     }
-    else if (contributionValue >= 33)
+    else if (contributionValue >= 66)
     {
       contributionFilter = [{money: 'true'}];
     }
