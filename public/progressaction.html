@@ -49,6 +49,13 @@
       <div>
         <strong><a href="{{website}}" target="_blank">{{name}}</a></strong>
       </div>
+      <div class="filterLabelContainer">
+        {{#each cause}}
+        <div class="filterLabel">
+          {{this}}
+        </div>
+        {{/each}}
+      </div>
       <ul>
       {{#if join}}
         <li><div>
