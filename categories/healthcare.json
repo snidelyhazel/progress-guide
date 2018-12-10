@@ -50,5 +50,19 @@
     "level": ["local"],
     "age": "all-ages",
     "cause": ["reproductive rights"]
+  },
+  {
+    "name": "The Trevor Project",
+    "website": "https://www.thetrevorproject.org/",
+    "volunteer": "https://www.thetrevorproject.org/get-involved/volunteer/",
+    "donate": "https://www.thetrevorproject.org/donate/",
+    "join": "https://www.tfaforms.com/428488",
+    "level": ["local", "federal"],
+    "type": "nongovernmental",
+    "age": "all-ages",
+    "time": "true",
+    "money": "true",
+    "identity": "lgbtq",
+    "cause": ["lgbtq equality", "mental health"]
   }
 ]

@@ -11,7 +11,7 @@
     "money": "true",
     "type": "nongovernmental",
     "level": ["local", "regional"],
-    "cause": ["food insecurity"]
+    "cause": ["social safety net", "food insecurity"]
   },
   {
     "name": "Feeding America",
@@ -25,6 +25,21 @@
     "money": "true",
     "type": "nongovernmental",
     "level": ["local", "federal"],
-    "cause": ["food insecurity"]
+    "cause": ["social safety net", "food insecurity"]
+  },
+  {
+    "name": "Los Angeles LGBT Center",
+    "website": "https://lalgbtcenter.org/",
+    "donate": "https://lalgbtcenter.org/how-you-can-help/donation",
+    "calendar": "https://lalgbtcenter.org/about-the-center/calendar",
+    "join": "https://lalgbtcenter.org/subscribe-for-updates",
+    "volunteer": "https://lalgbtcenter.org/how-you-can-help/volunteer",
+    "level": ["local"],
+    "type": "nongovernmental",
+    "age": "all-ages",
+    "time": "true",
+    "money": "true",
+    "identity": "lgbtq",
+    "cause": ["social safety net", "lgbtq equality"]
   }
 ]
