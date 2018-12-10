@@ -63,13 +63,18 @@
         If so, let's <a href="https://registertovote.ca.gov/" target="_blank">update your voter registration</a>.
       </p>
     {{/if}}
+
+    {{#if lazipcode}}
+      <p>Do you know where to vote? Let's <a id="pollLocatorLA" href="https://www.lavote.net/locator" target="_blank">find your polling place</a>!</p>
+        <!-- TO-DO: find corresponding polling place lookups for other counties in CA. -->
+    {{/if}}
   </div>
 
   <div class="capsule">
     <h3>Know your representatives!</h3>
     <h4>Who represents you in Congress?</h4>
     <a id="ziplook" href="https://ziplook.house.gov/htbin/findrep_house?ZIP={{zipcode}}" target="_blank">Find my Representative!</a>
-    <h4>Let them know what you think! Remember: they work for you!</h4>
+    <h4>Let them know what you think! Remember: they work for&nbsp;you!</h4>
   </div>
 
   <div class="capsule">
