@@ -104,6 +104,23 @@ app.post('/make-progress', function (req, res)
           handlebarsParams[req.body.voterstatus] = true;
         }
 
+        if (req.body.party == 'republican')
+        {
+          handlebarsParams.republican = true;
+        }
+        else if (req.body.party == 'libertarian')
+        {
+          handlebarsParams.libertarian = true;
+        }
+        else if (req.body.party == 'americanIndependent')
+        {
+          handlebarsParams.americanIndependent = true;
+        }
+        else
+        {
+          handlebarsParams.showRegistrationInfo = true;
+        }
+
         var html = template(handlebarsParams);
 
 
