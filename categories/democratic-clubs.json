@@ -13,7 +13,8 @@
     "type": "political",
     "time": "true",
     "money": "true",
-    "cause": ["lgbtq equality", "government", "representation"]
+    "cause": ["lgbtq equality", "government", "representation"],
+    "identity": "lgbtq"
   },
   {
     "name": "San Fernando Valley Young Democrats",

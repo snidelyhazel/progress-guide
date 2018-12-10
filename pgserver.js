@@ -78,11 +78,19 @@ app.post('/make-progress', function (req, res)
       contributionFilter = [{time: 'true'}, {money: 'true'}];
     }
 
-    db.find({
-      $or: contributionFilter,
-      type: {$in: arrayify(req.body.type)},
-      level: {$in: arrayify(req.body.level)},
-      cause: {$in: arrayify(req.body.cause)}
+    db.find(
+    {
+      $or: [
+        {
+          identity: {$in: req.body.lgbtq == 'yes' ? ['lgbtq'] : []}
+        },
+        {
+          $or: contributionFilter,
+          type: {$in: arrayify(req.body.type)},
+          level: {$in: arrayify(req.body.level)},
+          cause: {$in: arrayify(req.body.cause)}
+        }
+      ]
     }, function (err, entries)
       {
         // The entries parameter is an array containing matching entries.
