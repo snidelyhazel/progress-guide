@@ -63,7 +63,23 @@ app.post('/make-progress', function (req, res)
   {
     if (err) throw err;
 
+    var contributionValue = parseInt(req.body.contribution);
+    var contributionFilter;
+    if (contributionValue <= 66)
+    {
+      contributionFilter = [{time: 'true'}];
+    }
+    else if (contributionValue >= 33)
+    {
+      contributionFilter = [{money: 'true'}];
+    }
+    else
+    {
+      contributionFilter = [{time: 'true'}, {money: 'true'}];
+    }
+
     db.find({
+      $or: contributionFilter,
       type: {$in: arrayify(req.body.type)},
       level: {$in: arrayify(req.body.level)},
       cause: {$in: arrayify(req.body.cause)}

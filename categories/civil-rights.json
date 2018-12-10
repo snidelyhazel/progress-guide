@@ -43,5 +43,29 @@
     "time": "false",
     "money": "true",
     "cause": ["civil rights", "domestic terrorism"]
+  },
+  {
+    "name": "Women's March",
+    "website": "https://www.womensmarch.com/",
+    "onetimeDonate": "https://www.crowdrise.com/o/en/campaign/womensmarch2019",
+    "ongoingDonate": "https://secure.actblue.com/donate/wmnational?recurring=1",
+    "level": "federal",
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["civil rights", "gender equality"]
+  },
+  {
+    "name": "Women's March Los Angeles",
+    "website": "https://womensmarchla.org/",
+    "calendar": "https://womensmarchla.org/calendar/",
+    "volunteer": "https://actionnetwork.org/forms/3rd-annual-womens-march-la-volunteer-opportunities",
+    "join": "https://actionnetwork.org/forms/get-connected-to-womens-march-la",
+    "donate": "https://actionnetwork.org/fundraising/womens-march-la-foundation",
+    "level": "local",
+    "type": "nongovernmental",
+    "time": "true",
+    "money": "true",
+    "cause": ["civil rights", "gender equality"]
   }
 ]
