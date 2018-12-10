@@ -4,7 +4,7 @@ html
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
 
   color: white;
 }
@@ -31,31 +31,37 @@ a:hover
 
 .nav
 {
-  border-image-source: url(ribbon.png);
-  border-image-slice: 55 fill;
-  border-image-width: 25px;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  /*
-  width: 100vw;
-  position: fixed;
-  top: 25px;
-  background: rgb(255, 0, 0, .5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  */
+  /*background: rgb(255, 0, 0, .5);*/
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px #F1C40F;
+
 }
 
 .nav h1
 {
   padding: 20px .5em;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: .6em auto;
+  max-width: 700px;
   /*
   margin: 0px;
   margin-bottom: 5px;
   */
+}
+
+.nav h1 span
+{
+  width: min-content;
+}
+
+.logo
+{
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 1em;
 }
 
 h2
