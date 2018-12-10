@@ -6,16 +6,20 @@
 <body>
 
   <div class="nav">
-    <h1>The&nbsp;Progressive's&nbsp;Guide to Saving&nbsp;Democracy</h1>
+    <h1>
+      <img class="logo" src="/fists.png">
+      <span>The&nbsp;Progressive's&nbsp;Guide to Saving&nbsp;Democracy</span>
+    </h1>
   </div>
 
   <div class="capsule">
     <h2>Action items</h2>
+    <p>Here are some suggested actions based on your profile.</p>
   </div>
 
   <div class="capsule">
     <h3>Vote!</h3>
-    <h4>It's the most important thing you can do to save democracy!</h4>
+    <h4>It's the most important thing you can do to save&nbsp;democracy!</h4>
     {{#if showRegistrationInfo}}
     <p>
       {{#if yes}}
@@ -64,7 +68,7 @@
     <h4>Dedicate your time or money to causes that are important to&nbsp;you!</h4>
 
   {{#each entries}}
-    <div class="capsule">
+    <div class="results-capsule">
       <div>
         <strong><a href="{{website}}" target="_blank">{{name}}</a></strong>
       </div>
