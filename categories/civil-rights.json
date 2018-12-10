@@ -5,7 +5,7 @@
     "join": "https://eji.org/sign-up",
     "donate": "https://donatenow.networkforgood.org/eji",
     "action": "https://eji.org/get-involved",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
@@ -20,7 +20,7 @@
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
-    "cause": "lgbtq equality"
+    "cause": ["lgbtq equality"]
   },
   {
     "name": "American Civil Liberties Union",
@@ -28,17 +28,17 @@
     "onetimeDonate": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-1",
     "ongoingDonate": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-3",
     "join": "https://www.aclu.org/donate-aclu?ms=web_horiz_nav_hp#donation-tabs-4",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
-    "cause": "civil rights"
+    "cause": ["civil rights"]
   },
   {
     "name": "Southern Povery Law Center",
     "website": "https://www.splcenter.org/",
     "donate": "https://donate.splcenter.org/sslpage.aspx?pid=463",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
@@ -49,7 +49,7 @@
     "website": "https://www.womensmarch.com/",
     "onetimeDonate": "https://www.crowdrise.com/o/en/campaign/womensmarch2019",
     "ongoingDonate": "https://secure.actblue.com/donate/wmnational?recurring=1",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
@@ -62,7 +62,7 @@
     "volunteer": "https://actionnetwork.org/forms/3rd-annual-womens-march-la-volunteer-opportunities",
     "join": "https://actionnetwork.org/forms/get-connected-to-womens-march-la",
     "donate": "https://actionnetwork.org/fundraising/womens-march-la-foundation",
-    "level": "local",
+    "level": ["local"],
     "type": "nongovernmental",
     "time": "true",
     "money": "true",

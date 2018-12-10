@@ -8,9 +8,9 @@
     "time": "true",
     "money": "true",
     "type": "nongovernmental",
-    "level": "federal",
+    "level": ["federal"],
     "age": "all-ages",
-    "cause": "reproductive rights"
+    "cause": ["reproductive rights"]
   },
   {
     "name": "NARAL Pro-Choice California",
@@ -20,9 +20,9 @@
     "time": "true",
     "money": "true",
     "type": "nongovernmental",
-    "level": "local",
+    "level": ["local"],
     "age": "all-ages",
-    "cause": "reproductive rights"
+    "cause": ["reproductive rights"]
   },
   {
     "name": "Planned Parenthood",
@@ -33,9 +33,9 @@
     "time": "true",
     "money": "true",
     "type": "nongovernmental",
-    "level": "federal",
+    "level": ["federal"],
     "age": "all-ages",
-    "cause": "reproductive rights"
+    "cause": ["reproductive rights"]
   },
   {
     "name": "Planned Parenthood Los Angeles",
@@ -47,8 +47,8 @@
     "time": "true",
     "money": "true",
     "type": "nongovernmental",
-    "level": "local",
+    "level": ["local"],
     "age": "all-ages",
-    "cause": "reproductive rights"
+    "cause": ["reproductive rights"]
   }
 ]

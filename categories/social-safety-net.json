@@ -11,7 +11,7 @@
     "money": "true",
     "type": "nongovernmental",
     "level": ["local", "regional"],
-    "cause": "food insecurity"
+    "cause": ["food insecurity"]
   },
   {
     "name": "Feeding America",
@@ -25,6 +25,6 @@
     "money": "true",
     "type": "nongovernmental",
     "level": ["local", "federal"],
-    "cause": "food insecurity"
+    "cause": ["food insecurity"]
   }
 ]
