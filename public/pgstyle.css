@@ -93,6 +93,13 @@ h3
   margin-bottom: 0;
 }
 
+.results-capsule
+{
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  max-width: 30em;
+}
+
 ul
 {
   white-space: normal;
@@ -159,7 +166,7 @@ button
 {
   float: right;
   max-width: 300px;
-  text-align: center;
+  text-align: right;
 }
 .filterLabel
 {
