@@ -179,6 +179,18 @@ button
   display: inline-block;
   line-height: 1.2;
 }
+
+.tips li
+{
+  margin-top: 1em;
+}
+
+.tipColor
+{
+  color: #faa;
+  font-weight: bold;
+}
+
 /*
 blue
 #2E5C9B
