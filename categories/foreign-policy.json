@@ -7,17 +7,17 @@
     "volunteerGA": "https://www.cartercenter.org/involved/volunteers/index.html",
     "onetimeDonate": "https://secure3.convio.net/carter/site/Donation2?1220.donation=form1&df_id=1220",
     "ongoingDonate": "https://www.cartercenter.org/donate/peacekeepers/index.html",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
-    "cause": "foreign policy"
+    "cause": ["foreign policy"]
   },
   {
     "name": "Center for International Policy",
     "website": "https://www.internationalpolicy.org/",
     "donate": "https://www.internationalpolicy.org/donate",
-    "level": "federal",
+    "level": ["federal"],
     "type": "nongovernmental",
     "time": "false",
     "money": "true",
@@ -25,11 +25,14 @@
   },
   {
     "name": "Arms Control Association",
-    "cause": "nonproliferation",
     "website": "https://armscontrol.org",
     "donate": "https://armscontrol.org/donate",
     "join": "https://armscontrol.org/join",
-    "level": "federal"
+    "level": ["federal"],
+    "type": "nongovernmental",
+    "time": "false",
+    "money": "true",
+    "cause": ["nonproliferation"]
   },
   {
     "name": "Food Not Bombs",

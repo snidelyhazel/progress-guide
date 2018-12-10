@@ -87,6 +87,16 @@ app.post('/make-progress', function (req, res)
       {
         // The entries parameter is an array containing matching entries.
         // If no entry is found, entries is equal to [].
+
+        entries.sort(function(a, b)
+        {
+          var x = a.name.toLowerCase();
+          var y = b.name.toLowerCase();
+          if (x < y) {return -1;}
+          if (x > y) {return 1;}
+          return 0;
+        });
+
         var template = handlebars.compile(source);
 
         var handlebarsParams = {entries: entries};

@@ -8,7 +8,7 @@
     "type": "nongovernmental",
     "level": ["local", "federal"],
     "age": "all-ages",
-    "cause": "gun violence"
+    "cause": ["gun violence"]
   },
   {
     "name": "Everytown for Gun Safety",
@@ -22,6 +22,6 @@
     "type": "nongovernmental",
     "level": ["local", "federal"],
     "age": "all-ages",
-    "cause": "gun violence"
+    "cause": ["gun violence"]
   }
 ]

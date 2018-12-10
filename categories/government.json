@@ -4,7 +4,7 @@
     "website": "https://maplight.org/",
     "donate": "https://maplight.org/donate/",
     "cause": ["government", "transparency"],
-    "level": "federal",
+    "level": ["federal"],
     "type": "nonprofit",
     "age": "all-ages",
     "time": "false",
@@ -30,6 +30,6 @@
     "type": "governmental",
     "level": ["local", "federal"],
     "age": "all-ages",
-    "cause": "candidate-campaign"
+    "cause": ["candidate-campaign"]
   }
 ]
