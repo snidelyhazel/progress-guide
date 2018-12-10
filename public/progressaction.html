@@ -16,6 +16,7 @@
   <div class="capsule">
     <h3>Vote!</h3>
     <h4>It's the most important thing you can do to save democracy!</h4>
+    {{#if showRegistrationInfo}}
     <p>
       {{#if yes}}
         Thank you for being a voter! <a href="https://voterstatus.sos.ca.gov/" target="_blank">Let's check your voter registration information!</a>
@@ -39,10 +40,28 @@
         Remember to preregister to vote when you're 16! Thank you for being an engaged citizen!
       {{/if}}
     </p>
+    {{/if}}
+    {{#if republican}}
+      <p>
+        You indicated you are registered to vote as a Republican. Is that still accurate? If not, let's <a href="https://registertovote.ca.gov/" target="_blank">update your voter registration</a>.
+      </p>
+    {{/if}}
+    {{#if libertarian}}
+      <p>
+        You indicated you are registered to vote as a Libertarian. Is that still accurate? If not, let's <a href="https://registertovote.ca.gov/" target="_blank">update your voter registration</a>.
+      </p>
+    {{/if}}
+    {{#if americanIndependent}}
+      <p>
+        You indicated you are registered to vote as a member of the American Independent Party, the party of <a href="https://en.wikipedia.org/wiki/George_Wallace" target="_blank">George Wallace</a>.
+        Did you <a href="https://en.wikipedia.org/wiki/American_Independent_Party#Membership_and_accidental-membership_phenomenon" target="_blank">intend to register with no party preference</a>?
+        If so, let's <a href="https://registertovote.ca.gov/" target="_blank">update your voter registration</a>.
+      </p>
+    {{/if}}
   </div>
   <div class="capsule">
     <h3>Get involved!</h3>
-    <h4>Dedicate your time or money to causes that are important to you!</h4>
+    <h4>Dedicate your time or money to causes that are important to&nbsp;you!</h4>
 
   {{#each entries}}
     <div class="capsule">
