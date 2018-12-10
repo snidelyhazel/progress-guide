@@ -63,32 +63,37 @@ app.post('/make-progress', function (req, res)
   {
     if (err) throw err;
 
-    db.find({level: {$in: arrayify(req.body.level)}, cause: {$in: arrayify(req.body.cause)}}, function (err, entries)
-    {
-      // The entries parameter is an array containing matching entries.
-      // If no entry is found, entries is equal to [].
-      var template = handlebars.compile(source);
-
-      var handlebarsParams = {entries: entries};
-
-      if (parseInt(req.body.age) < 16)
+    db.find({
+      type: {$in: arrayify(req.body.type)},
+      level: {$in: arrayify(req.body.level)},
+      cause: {$in: arrayify(req.body.cause)}
+    }, function (err, entries)
       {
-        handlebarsParams.ineligible = true;
-      }
-      else if (parseInt(req.body.age) < 18)
-      {
-        handlebarsParams["prereg" + req.body.prereg] = true;
-      }
-      else
-      {
-        handlebarsParams[req.body.voterstatus] = true;
-      }
+        // The entries parameter is an array containing matching entries.
+        // If no entry is found, entries is equal to [].
+        var template = handlebars.compile(source);
 
-      var html = template(handlebarsParams);
+        var handlebarsParams = {entries: entries};
+
+        if (parseInt(req.body.age) < 16)
+        {
+          handlebarsParams.ineligible = true;
+        }
+        else if (parseInt(req.body.age) < 18)
+        {
+          handlebarsParams["prereg" + req.body.prereg] = true;
+        }
+        else
+        {
+          handlebarsParams[req.body.voterstatus] = true;
+        }
+
+        var html = template(handlebarsParams);
 
 
-      res.send(html);
-    });
+        res.send(html);
+      }
+    );
   });
 });
 
